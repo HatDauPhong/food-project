@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <a href="#" class="header__logo">
+                <i class="fas fa-utensils"></i>
+                <span>Food</span> 
+            </a>
+            <div class="header__category">
+                <div class="list-category">
+                    <a href="#home" class="category-item active">Home</a>
+                    <a href="#dishes" class="category-item">Dishes</a>
+                    <a href="#about" class="category-item">About</a>
+                    <a href="#menu" class="category-item">Menu</a>
+                    <a href="#review" class="category-item">Review</a>
+                </div>
+            </div>
+            <!-- =====MOBILE====== -->
+            <div class="header__bar-mobile">
+                <div class="list-category__mobile">
+                    <a href="#home" class="category-item__mobile active">Home</a>
+                    <a href="#dishes" class="category-item__mobile">Dishes</a>
+                    <a href="#about" class="category-item__mobile">About</a>
+                    <a href="#menu" class="category-item__mobile">Menu</a>
+                    <a href="#review" class="category-item__mobile">Review</a>
+                </div>
+            </div>
+
+            <div class="overlay__mobile"></div>
+
+            <!-- ============ -->
+            <div class="header__icon">
+                <ul class="list-icon">
+                    <li class="icon-item search__food">
+                        <form action="" class="search">
+                            <input type="text" class="search-bar" placeholder="Search...">
+                            <div class="btn-search">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="icon-item favourite">
+                        <div class="favourite-food">
+                            <div class="icon-favourite">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="overlay__favourite">
+                                <ul class="favourite-list">
+                                    <li class="favourite-item">a</li>
+                                    <li class="favourite-item">a</li>
+                                    <li class="favourite-item">a</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="icon-item cart">
+                        <div class="icon-cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="overlay__cart">
+                            <ul class="cart-list">
+                                <li class="cart-item">e</li>
+                                <li class="cart-item">e</li>
+                                <li class="cart-item">e</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="icon-item menu_bar">
+                        <div class="favourite-food">
+                            <div class="icon-favourite">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="overlay__favourite">
+                                <ul class="favourite-list">
+                                    <li class="favourite-item">a</li>
+                                    <li class="favourite-item">a</li>
+                                    <li class="favourite-item">a</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="home__section home swiper" id="home">
+        <div class="home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="wrapper__content">
+                        <span class="wrapper-title">Our Special Dish</span>
+                        <h3 class="wrapper-name">Spicy Noodles</h3>
+                        <p class="wrapper_description">It's food lovers like you who inspire us to do what we do. Your comments, ideas and questions push us to go that extra mile, every time. So drop us a line!</p>
+                        <a href="#" class="btn__order">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/home-img-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="wrapper__content">
+                        <span class="wrapper-title">Our Special Dish</span>
+                        <h3 class="wrapper-name">Fried Chicken</h3>
+                        <p class="wrapper_description">It's food lovers like you who inspire us to do what we do. Your comments, ideas and questions push us to go that extra mile, every time. So drop us a line!</p>
+                        <a href="#" class="btn__order">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/home-img-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="wrapper__content">
+                        <span class="wrapper-title">Our Special Dish</span>
+                        <h3 class="wrapper-name">Hot Pizza</h3>
+                        <p class="wrapper_description">It's food lovers like you who inspire us to do what we do. Your comments, ideas and questions push us to go that extra mile, every time. So drop us a line!</p>
+                        <a href="#" class="btn__order">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./assets/img/home-img-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="dishes__section" id="dishes">
+        <div class="dishes__header">
+            <h3 class="dish-small-title">Our Dishes</h3>
+            <h2 class="dish-big-title">POPULAR DISHES</h2>
+        </div>
+        <div class="dishes__body">
+            <div class="dishes__container container ">
+                <div class="dishes__item">
+                    <div class="icon__hover">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="img__item">
+                        <img src="./assets/img/dish-1.png" alt="">
+                    </div>
+                    <div class="food_description">
+                        <h3 class="food__name">Tasty Food</h3>
+                        <div class="rate__food">
+                            <i class="fas fa-star">4.5</i>
+                        </div>
+                        <div class="item__footer">
+                            <span class="item__price">$15</span>
+                            <span class="food-add">Add To Cart</span>
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes__item">
+                    <div class="icon__hover">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="img__item">
+                        <img src="./assets/img/dish-2.png" alt="">
+                    </div>
+                    <div class="food_description">
+                        <h3 class="food__name">Tasty Food</h3>
+                        <div class="rate__food">
+                            <i class="fas fa-star">4.5</i>
+                        </div>
+                        <div class="item__footer">
+                            <span class="item__price">$15</span>
+                            <span class="food-add">Add To Cart</span>
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes__item">
+                    <div class="icon__hover">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="img__item">
+                        <img src="./assets/img/dish-3.png" alt="">
+                    </div>
+                    <div class="food_description">
+                        <h3 class="food__name">Tasty Food</h3>
+                        <div class="rate__food">
+                            <i class="fas fa-star">4.5</i>
+                        </div>
+                        <div class="item__footer">
+                            <span class="item__price">$15</span>
+                            <span class="food-add">Add To Cart</span>
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes__item">
+                    <div class="icon__hover">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="img__item">
+                        <img src="./assets/img/dish-4.png" alt="">
+                    </div>
+                    <div class="food_description">
+                        <h3 class="food__name">Tasty Food</h3>
+                        <div class="rate__food">
+                            <i class="fas fa-star">4.5</i>
+                        </div>
+                        <div class="item__footer">
+                            <span class="item__price">$15</span>
+                            <span class="food-add">Add To Cart</span>
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes__item">
+                    <div class="icon__hover">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="img__item">
+                        <img src="./assets/img/dish-5.png" alt="">
+                    </div>
+                    <div class="food_description">
+                        <h3 class="food__name">Tasty Food</h3>
+                        <div class="rate__food">
+                            <i class="fas fa-star">4.5</i>
+                        </div>
+                        <div class="item__footer">
+                            <span class="item__price">$15</span>
+                            <span class="food-add">Add To Cart</span>
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="dishes__item">
+                    <div class="icon__hover">
+                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="img__item">
+                        <img src="./assets/img/dish-6.png" alt="">
+                    </div>
+                    <div class="food_description">
+                        <h3 class="food__name">Tasty Food</h3>
+                        <div class="rate__food">
+                            <i class="fas fa-star">4.5</i>
+                        </div>
+                        <div class="item__footer">
+                            <span class="item__price">$15</span>
+                            <span class="food-add">Add To Cart</span>
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about__section" id="about">
+        <div class="about__container container">
+            <h3 class="about__small-title">About Us</h3>
+            <h2 class="about__big-title">WHY CHOOSE US</h2>
+            <div class="about__content">
+                <div class="about-img">
+                    <img src="./assets/img/about-img.png" alt="">
+                </div>
+                <div class="about__description">
+                    <h2 class="description-title">Best Food In The Country</h2>
+                    <p class="description-text">For us, it's not just about bringing you good food from your favourite restaurants. It's about making a connection, which is why we sit down with the chefs, dreaming up menus tThat will arrive fresh and full of flavour. Try Us!</p>
+                    <div class="about__service">
+                        <div class="btn-service">
+                            <i class="fas fa-shipping-fast"></i>
+                            <p class="service-text">Free Delivery</p>
+                        </div>
+                        <div class="btn-service">
+                            <i class="fas fa-money-check"></i>
+                            <p class="service-text">Easy Payments</p>
+                        </div>
+                        <div class="btn-service">
+                            <i class="fas fa-headset"></i>
+                            <p class="service-text">24/7 Service</p>
+                        </div>
+                    </div>
+                    <div class="btn-learn">Learn More</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu__section" id="menu">
+        <div class="menu__header">
+            <h3 class="menu__small-title">Our Menu</h3>
+            <h2 class="menu__big-title">TODAY'S SPECIALITY</h2>
+        </div>
+        <div class="menu__container container">
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-1.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-2.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-3.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-4.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-5.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-6.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-7.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-8.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="item__img">
+                    <img src="./assets/img/menu-9.jpg" alt="">
+                </div>
+                <div class="item__content">
+                    <div class="item-name">Delicious Food</div>
+                    <div class="item__description">Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Excepturi, Accusantium.</div>
+                    <div class="item-footer">
+                        <span class="item__price">$15</span>
+                        <span class="item__add">Add To Cart</span>
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review__section" id="review">
+        <div class="review__container container">
+            <h3 class="review__small-tilte">Customer's Review</h3>
+            <h2 class="review__big-title">WHAT THEY SAY</h2>
+            <div class="list-review">
+                <div class="item-review">
+                    <div class="profile">
+                        <h4 class="profile__name">Thanh Tung</h4>
+                        <div class="img__avatar">
+                            <img src="./assets/img/pic-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="review-comment">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="comment__text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sit Fugiat Consequuntur Repellendus Aperiam Deserunt Nihil.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="item-review">
+                    <div class="profile">
+                        <h4 class="profile__name">Thanh Tung</h4>
+                        <div class="img__avatar">
+                            <img src="./assets/img/pic-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="review-comment">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="comment__text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sit Fugiat Consequuntur Repellendus Aperiam Deserunt Nihil.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="item-review">
+                    <div class="profile">
+                        <h4 class="profile__name">Thanh Tung</h4>
+                        <div class="img__avatar">
+                            <img src="./assets/img/pic-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="review-comment">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="comment__text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sit Fugiat Consequuntur Repellendus Aperiam Deserunt Nihil, Corporis Fugit Voluptatibus Voluptate Totam Neque Illo Placeat Eius Quis Laborum Aspernatur Quibusdam. Ipsum, Magni.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+                <div class="item-review">
+                    <div class="profile">
+                        <h4 class="profile__name">Thanh Tung</h4>
+                        <div class="img__avatar">
+                            <img src="./assets/img/pic-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="review-comment">
+                        <i class="fas fa-quote-left"></i>
+                        <p class="comment__text">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Sit Fugiat Consequuntur Repellendus Aperiam Deserunt Nihil, Corporis Fugit Voluptatibus Voluptate Totam Neque Illo Placeat Eius Quis Laborum Aspernatur Quibusdam. Ipsum, Magni.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer__section">
+        <div class="footer__container container">
+            <div class="footer__item locations">
+                <h2 class="location-header">Locations</h2>
+                <ul>
+                    <li class="location-name">
+                        <a href="#" class="location-link">Bình Phước</a>
+                    </li>
+                    <li class="location-name">
+                        <a href="#" class="location-link">TP Hồ Chí Minh</a>
+                    </li>
+                    <li class="location-name">
+                        <a href="#" class="location-link">Hà Nội</a>
+                    </li>
+                    <li class="location-name">
+                        <a href="#" class="location-link">Đà Nẵng</a>
+                    </li>
+                    <li class="location-name">
+                        <a href="#" class="location-link">Cần Thơ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item quicklink">
+                <h2 class="quicklink-header">Quick Links</h2>
+                <ul>
+                    <li class="quicklink-name">
+                        <a href="#" class="quicklink-link">Home</a>
+                    </li>
+                    <li class="quicklink-name">
+                        <a href="#" class="quicklink-link">Dishes</a>
+                    </li>
+                    <li class="quicklink-name">
+                        <a href="#" class="quicklink-link">About</a>
+                    </li>
+                    <li class="quicklink-name">
+                        <a href="#" class="quicklink-link">Menu</a>
+                    </li>
+                    <li class="quicklink-name">
+                        <a href="#" class="quicklink-link">Review</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item contactinfor">
+                <h2 class="contactinfor-header">Contact Infor</h2>
+                <ul>
+                    <li class="contactinfor-name">
+                        <a href="#" class="contactinfor">0123456789</a>
+                    </li>
+                    <li class="contactinfor-name">
+                        <a href="#" class="contactinfor">taolaTung@gmail.com</a>
+                    </li>
+                    <li class="contactinfor-name">
+                        <a href="#" class="contactinfor">Binh Phuoc, Viet Nam</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item followus">
+                <h2 class="followus-header">Follow Us</h2>
+                <ul>
+                    <li class="followus-name">
+                        <a href="" class="followus-link">Facebook</a>
+                    </li>
+                    <li class="followus-name">
+                        <a href="" class="followus-link">Instagram</a>
+                    </li>
+                    <li class="followus-name">
+                        <a href="" class="followus-link">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__creby"></div>
+    </footer>
+
+
+
+    <!-- ==============JS============ -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+</body>
+</html>
