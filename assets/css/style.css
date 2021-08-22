@@ -12,6 +12,7 @@ body {
     margin: 0;
     height: 3000px;
     overflow-x: hidden;
+    
 }
 html {
     scroll-behavior: smooth;
@@ -43,6 +44,7 @@ video {
     z-index: 1000;
     position: fixed;
     background-color: #fff;
+    
 }
 .header__container {
     display: flex;
@@ -188,6 +190,7 @@ video {
 .home__section {
     height: auto;
     position: relative;
+    
 }
 .home__section .home-slider {
     
@@ -235,6 +238,7 @@ video {
 .dishes__section {
     background-color: #eee;
     height: auto;
+    scroll-margin-top: 1em;
 }
 .dishes__header {
     padding-top: 3em;
@@ -365,7 +369,7 @@ video {
 
 /* ==============About============== */
 .about__section {
-    
+    scroll-margin-top: 1em;
 }
 .about__container {
     padding-top: 3em;
@@ -445,6 +449,7 @@ video {
 .menu__section {
     background-color: #eee;
     height: auto;
+    scroll-margin-top: 1em;
 }
 .menu__header {
     text-align: center;
@@ -526,6 +531,7 @@ video {
 /* =================Review=============== */
 .review__section {
     height: auto;
+    scroll-margin-top: 1em;
 }
 .review__container {
     padding-top: 3em;
@@ -605,6 +611,8 @@ video {
 .footer__section {
     height: auto;
     background-color: #eee;
+    scroll-margin-top: 1em;
+    padding-top: 1em;
 }
 .footer__container {
     display: grid;
